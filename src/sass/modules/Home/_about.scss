@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.about-bottom{
+    img{
+        filter: grayscale(100%);
+        opacity: 50%;
+    }
+    img:hover{
+        filter: none;
+        opacity: 100%;
+    }
+}
+@media (max-width:480px) {
+    .about-section{
+        width: 100%;
+        .about-top{
+            .test{
+                .read-more{
+                    width: 200px !important;
+                    padding: 2vh 2vw !important;
+                }
+            }
+            .about-company{
+                width: 100% !important;
+                img{
+                    width: 100% !important;
+                    height: 100%;
+                }
+            }   
+        }
+        .about-bottom{
+            grid-template-columns: repeat(2 , 1fr);
+            gap: 20px;
+            justify-content: center !important;
+            img{
+                width: 180px;
+                padding: 20px;
+            }
+        }
+    }
+}
