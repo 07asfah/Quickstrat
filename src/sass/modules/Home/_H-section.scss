@@ -1,0 +1,164 @@
+
+
+// first part of hero section
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.hero-container{
+    background: linear-gradient(#fcf9f786,   #F2F6F9), url('../../../../public/images/assets/img/hero-bg-light.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding-top: 10rem;
+    font-family: "Nunito", sans-serif;
+    
+}
+
+.hero-title{
+    font-size: 50px;
+
+}
+.hero-pg{
+    color: #757AA9;
+}
+
+.first-part>h1>span{
+    color: #388DA8;
+
+}
+
+.hero_btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+.hero_btns> button{
+    padding: 10px 1.5rem;
+    border-radius: 22px;
+    background-color: #388DA8;
+    color: white;
+    border: none;
+    font-family: "Nunito", sans-serif;
+
+    
+}
+.hero_btns a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+#play{
+    color: #388DA8;
+    height: 32px !important;
+    width: 32px !important;
+   
+    
+}
+svg {
+    display: inline-block;
+    max-width: 100%;
+  }
+
+.hero-img>img{
+    width: 35vw;
+    
+}
+.flex{
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    justify-content: center;
+    
+   
+
+}
+// second part of hero section
+.second-part{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #181c1d09 ;
+    text-align: start;
+    height: 25vh;
+    padding-inline: 2rem;
+    gap: 3rem;
+    font-family: "Nunito", sans-serif;
+
+
+}
+.lorem-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 31vw;
+    
+    
+}
+.lorem>h1{
+    font-size: 20px;
+}
+.lorem-container>i{
+    font-size: 40px;
+    background-color: #D1E5EC ;
+    color: #388DA8;
+    padding: 5px 1rem 0px 1rem;
+    
+}
+
+
+@media (max-width:480px) {
+    // FIRST PART HERO RESPO
+
+    .first-part{
+        width: 80vw;
+        margin: auto;
+    }
+    .hero-img>img{
+        width: 80vw;
+        
+    }
+    // SECOND PART HERO RESPO
+
+    .second-part{
+       
+        flex-direction: column;
+        height: fit-content;
+        width: 100vw;
+        margin: auto;
+        padding-top: 6rem;
+        padding-bottom: 2rem;
+
+
+    }
+    .lorem-container{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        gap: 1rem;
+        width: 100%;
+        text-align: center;
+        
+        
+    }
+    .lorem-container>i{
+        font-size: 40px;
+        background-color: #D1E5EC;
+        color: #388DA8;
+       
+        
+    }
+
+
+
+
+}

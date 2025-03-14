@@ -1,0 +1,61 @@
+review{
+    .questions-asked{
+        .h-q{
+            padding: 10vh 0;
+            h1{
+                border-bottom: 3px solid #388DA8;
+                padding: 2vh 0;
+        }
+    }
+        .accordion{
+            padding: 0 5vw;
+            .accordion-item{
+                background-color: #F9FBFC;
+                padding: 2vh 4vw;
+            }
+        }
+    }
+    .carousel-slide{
+        background-color: #F8FBFC;
+        .h-t{
+            width: 10%;
+            h1{
+                border-bottom: 3px solid #388DA8;
+            }
+        }
+        .carousel-inner{
+            .carousel-item{
+                padding: 5vh 10vw;
+                div{
+                    box-shadow:
+    inset 0 -3em 3em rgba(0, 0, 0, 0.3),
+    0 0 0 2px rgb(0, 0, 0),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.6);
+                    .img-s{
+                        padding: 3vh 0;
+                    }
+                    p{
+                        width: 60%;
+                        text-align: center;
+                        padding-bottom: 10vh;
+                    }
+                    .img-p{
+                        width: 100px;
+                        border-radius: 50%;
+                    }
+                    h4{
+                        color: gray;
+                        padding-bottom: 4vh 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:480px) {
+    .accordion{
+        padding: 0 2vw;
+    }
+    
+}
