@@ -1,0 +1,131 @@
+#services{
+    background-color: rgb(248, 251, 252);
+    padding-inline: 0.5rem;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding: 60px;
+    .section-title{
+        h2{
+            position: relative;
+            font-size: 32px;
+        h2::after{
+            content: "";
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            transform: translate( -50% , 50%);
+            height: 4px;
+            width: 4vw;
+            background-color: #388da8;
+            border-radius: 20px;
+            }
+
+        }
+    }
+}
+
+.service-item{
+    display: flex;
+    align-items: start !important;
+    gap: 1rem;
+    border: 0.5px solid black;
+    padding: 20px;
+    transition: box-shadow .3s;
+    border-radius:10px;
+    border: 1px solid #ccc;
+    background: #fff;
+    float: left;
+
+    .bi-activity{
+        border: 1px solid rgb(13, 202, 240);
+        border-radius: 15px;
+        background-color: rgb(230, 250, 253);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        flex-shrink: 0;
+        padding: 15px;
+    }
+    h3{
+        font-size: large;
+        color: rgb(62, 80, 85);
+    }
+    .bi-broadcast{
+        border: 1px solid rgb(253, 126, 20);
+        border-radius: 15px;
+        background-color: rgb(255, 242, 231);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        flex-shrink: 0;
+        padding: 15px;
+    }
+
+    .bi-bounding-box-circles{
+        border: 1px solid rgb(223, 21, 41);
+        border-radius: 15px;
+        background-color: rgb(252, 231, 229);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        flex-shrink: 0;
+        padding: 15px;
+    }
+    .bi-easel{
+        border: 1px solid rgb(32, 201, 151);
+        border-radius: 15px;
+        background-color: rgb(232, 249, 244);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        flex-shrink: 0;
+        padding: 15px;
+    }
+
+
+    .bi-calendar4-week{
+        border: 1px solid rgb(102, 16, 242);
+        border-radius: 15px;
+        background-color: rgb(239, 231, 254);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        flex-shrink: 0;
+        padding: 15px;
+    }
+
+
+    .bi-chat-square-text{
+        border: 1px solid rgb(245, 51, 140);
+        border-radius: 15px;
+        background-color: rgb(254, 233, 243);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        flex-shrink: 0;
+        padding: 15px;
+    }
+}
+
+.service-item:hover {
+    box-shadow: 10px 10px 10px rgba(36, 36, 36, 0.5);
+}
+
+@media (max-width:480px){
+#services{
+    padding: 0 !important;
+}
+    
+}

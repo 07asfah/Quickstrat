@@ -1,3 +1,398 @@
+* {
+  padding: 0;
+  margin: 0;
+}
 
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.title h2 {
+  position: relative;
+  font-size: 32px;
+}
+.title h2::after {
+  content: "";
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  height: 4px;
+  width: 4vw;
+  background-color: #388da8;
+  border-radius: 20px;
+}
+
+.content-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 0.5rem;
+  gap: 1rem;
+  padding-top: 2.5rem;
+}
+.content-price .free-plan {
+  background-color: rgb(247, 251, 252);
+  border-radius: 10px;
+  padding: 40px 40px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+}
+.content-price .free-plan h3 {
+  font-weight: 500;
+  font-size: 20px;
+}
+.content-price .free-plan h4 {
+  color: #388da8;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.content-price .free-plan span {
+  color: #a5aaad;
+  font-weight: 500;
+  font-size: 18px;
+}
+.content-price .free-plan .sub {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content-price .free-plan .sub a {
+  border: 1px solid black;
+  text-decoration: none;
+  color: rgb(61, 67, 72);
+  border-radius: 5px;
+  padding: 10px 135px;
+  margin-bottom: 6px;
+  margin-top: 20px;
+}
+.content-price .free-plan .sub a:hover {
+  background-color: rgb(56, 141, 168);
+  color: white;
+  border: none;
+  transition: 0.1s;
+}
+.content-price ul {
+  list-style-type: none;
+  line-height: 20px;
+  color: rgb(127, 131, 134);
+}
+.content-price ul li {
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  padding-right: 3px;
+}
+.content-price ul li p {
+  padding: 0;
+  margin: 0;
+}
+.content-price ul .liste {
+  text-decoration: line-through;
+  color: #a5aaad;
+}
+.content-price .Business-plan {
+  background-color: rgb(247, 251, 252);
+  border-radius: 10px;
+  padding: 40px 40px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+}
+.content-price .Business-plan h3 {
+  font-weight: 500;
+  font-size: 20px;
+}
+.content-price .Business-plan h4 {
+  color: #388da8;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.content-price .Business-plan span {
+  color: #a5aaad;
+  font-weight: 500;
+  font-size: 18px;
+}
+.content-price .Business-plan .sub {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content-price .Business-plan .sub a {
+  border: 1px solid black;
+  text-decoration: none;
+  color: rgb(61, 67, 72);
+  border-radius: 5px;
+  padding: 10px 135px;
+  margin-bottom: 6px;
+  margin-top: 20px;
+  background-color: rgb(56, 141, 168);
+  color: white;
+  border: none;
+}
+.content-price .Business-plan .line {
+  text-decoration: line-through;
+  color: #a5aaad;
+}
+.content-price .developer-plan {
+  background-color: rgb(247, 251, 252);
+  border-radius: 10px;
+  padding: 40px 40px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+}
+.content-price .developer-plan h3 {
+  font-weight: 500;
+  font-size: 20px;
+}
+.content-price .developer-plan h4 {
+  color: #388da8;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.content-price .developer-plan span {
+  color: #a5aaad;
+  font-weight: 500;
+  font-size: 18px;
+}
+.content-price .developer-plan .sub {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content-price .developer-plan .sub a {
+  border: 1px solid black;
+  text-decoration: none;
+  color: rgb(61, 67, 72);
+  border-radius: 5px;
+  padding: 10px 135px;
+  margin-bottom: 6px;
+  margin-top: 20px;
+}
+.content-price .developer-plan .sub a:hover {
+  background-color: rgb(56, 141, 168);
+  color: white;
+  border: none;
+  transition: 0.1s;
+}
+.content-price .developer-plan ul {
+  list-style-type: none;
+  line-height: 20px;
+  color: rgb(127, 131, 134);
+}
+.content-price .developer-plan ul li {
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  padding-right: 3px;
+}
+.content-price .developer-plan ul li p {
+  padding: 0;
+  margin: 0;
+}
+.content-price .developer-plan ul .liste {
+  text-decoration: line-through;
+  color: #a5aaad;
+}
+
+@media (max-width: 480px) {
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .title p {
+    width: 300px;
+  }
+  .content-price {
+    display: flex;
+    flex-direction: column !important;
+    text-align: start;
+  }
+  .content-price .free-plan {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    width: 100%;
+  }
+  .content-price .free-plan .sub a {
+    display: flex;
+    text-align: center;
+    padding: 5px 90px;
+  }
+  .content-price ul {
+    padding: 0;
+  }
+  .content-price .Business-plan {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    width: 100%;
+  }
+  .content-price .Business-plan .sub a {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 5px 90px;
+  }
+  .content-price .Business-plan ul {
+    padding: 0;
+  }
+  .content-price .developer-plan {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    width: 100%;
+  }
+  .content-price .developer-plan .sub a {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 5px 90px;
+  }
+  .content-price .developer-plan ul {
+    padding: 0;
+  }
+}
+#services {
+  background-color: rgb(248, 251, 252);
+  padding-inline: 0.5rem;
+  gap: 1rem;
+  margin-top: 3rem;
+  padding: 60px;
+}
+#services .section-title h2 {
+  position: relative;
+  font-size: 32px;
+}
+#services .section-title h2 h2::after {
+  content: "";
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  height: 4px;
+  width: 4vw;
+  background-color: #388da8;
+  border-radius: 20px;
+}
+
+.service-item {
+  display: flex;
+  align-items: start !important;
+  gap: 1rem;
+  border: 0.5px solid black;
+  padding: 20px;
+  transition: box-shadow 0.3s;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: #fff;
+  float: left;
+}
+.service-item .bi-activity {
+  border: 1px solid rgb(13, 202, 240);
+  border-radius: 15px;
+  background-color: rgb(230, 250, 253);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  padding: 15px;
+}
+.service-item h3 {
+  font-size: large;
+  color: rgb(62, 80, 85);
+}
+.service-item .bi-broadcast {
+  border: 1px solid rgb(253, 126, 20);
+  border-radius: 15px;
+  background-color: rgb(255, 242, 231);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  padding: 15px;
+}
+.service-item .bi-bounding-box-circles {
+  border: 1px solid rgb(223, 21, 41);
+  border-radius: 15px;
+  background-color: rgb(252, 231, 229);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  padding: 15px;
+}
+.service-item .bi-easel {
+  border: 1px solid rgb(32, 201, 151);
+  border-radius: 15px;
+  background-color: rgb(232, 249, 244);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  padding: 15px;
+}
+.service-item .bi-calendar4-week {
+  border: 1px solid rgb(102, 16, 242);
+  border-radius: 15px;
+  background-color: rgb(239, 231, 254);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  padding: 15px;
+}
+.service-item .bi-chat-square-text {
+  border: 1px solid rgb(245, 51, 140);
+  border-radius: 15px;
+  background-color: rgb(254, 233, 243);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  padding: 15px;
+}
+
+.service-item:hover {
+  box-shadow: 10px 10px 10px rgba(36, 36, 36, 0.5);
+}
+
+@media (max-width: 480px) {
+  #services {
+    padding: 0 !important;
+  }
+}
 
 /*# sourceMappingURL=app.css.map */
